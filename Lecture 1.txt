@@ -1,0 +1,7 @@
+Lecture 1 => (Introduction)
+
+` Typescript is a superset language for javascript which means it extends the language with new feuters and syntax.
+` Browsers can't understand typescript so it compiles it into javascript in order to understand it and excute it.
+` Typescript uses strict data types wthic means you can't change the variable in code like javascript which is dynamic.
+` Typescript supports modern features of javascript such as (arrow function, let, const) because it compiles it into javascript old langauge so the browser can understand it.
+` It got extra features like don't appear in javascript (generics, interfaces, tuples).
