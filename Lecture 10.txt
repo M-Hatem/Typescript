@@ -1,0 +1,13 @@
+Lecture 10 => (Function Signatures)
+
+` Function signature is used to define a sample for a function.
+` The following code must obay the rules of the function signautre and if it doesn't it shows an error.
+` The code is : let <name of function>: (<parameters with strict data types>) => <returned strict data type> ;
+
+` for Example :
+
+	let logDetails: (obj: {name: string, age: number}) => void ;
+
+	logDetails (ninja: {name: Person, age: 30}) => {
+		console.log(`${ninja.name} is ${ninja.age} years old.`);
+	}
