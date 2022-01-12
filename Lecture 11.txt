@@ -1,0 +1,23 @@
+Lecture 11 => (The DOM & Type Casting)
+
+` When using the DOM and queryselecting an element we may get an error, because typescript doesn't know whether the element is in the HTML file or not
+  because it doesn't have any connection to it.
+  so there are one of two solutions here :
+	` The first one => is to make a control flow with true statment always and put the code inside it.
+	Example : if (true) {
+			// code here
+		  }
+	` The second one => is to put an exclamation sign right after the queryselection the element to tell typescript i'm pretty sure there is an element in HTML with the same name.
+	Example : const anchor = document.querySelector('a')!;
+
+` Typescript doesn't know if the class or tag name are actually elements and every element has a special data type and if it's defined so the special data type will be just Element. so in order to define an element when queryselecting it we need to type the keyword as following with the type of element that is defined in typesctipt.
+  for Example : const anchor = document.querySelector('.new-item-form') as HTMLFormElement;
+  so now we can use built-in methods for the form in typescript because now the class name is defined as for HTML form, and this is called Type Casting.
+
+` Type Casting is a method for converting a data type to another data type.
+
+` To automatic printing a number data type in a form to javascript and don't allow it to be converted to a string we use a method called AsNumber.
+  for Example : 
+		const amount = document.querySelector('#amount') as HTMLInputElement;
+		console.log(amount.valueAsNumber);
+
