@@ -1,0 +1,12 @@
+Lecture 9 => (Type Aliases)
+
+` Type Aliases works to reduce code duplication to improve performance.
+` to use Type Aliases we type => (type <name of the type> = <the duplicated code> ;).
+` It's like variables but for specifying a specific data type.
+
+` Example :
+
+	type Second = number;
+ 
+	let timeInSecond: number = 10;
+	let time: Second = 10;
